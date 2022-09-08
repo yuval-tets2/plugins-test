@@ -27,7 +27,7 @@ import { TaskWhereUniqueInput } from "./TaskWhereUniqueInput";
 import { TaskFindManyArgs } from "./TaskFindManyArgs";
 import { TaskUpdateInput } from "./TaskUpdateInput";
 import { Task } from "./Task";
-@swagger.ApiBasicAuth()
+@swagger.ApiBearerAuth()
 @common.UseGuards(defaultAuthGuard.DefaultAuthGuard, nestAccessControl.ACGuard)
 export class TaskControllerBase {
   constructor(
